@@ -1,20 +1,12 @@
-import React from 'react';
 
-const Special = (props) => {
-    const {title, content } = props.data;
+const Introduce = (props) => {
     return (
         <>
-            <div className="specialContent">
-                <h3 className = {props.isDark ? "specialContentTitleDarkMode" : "specialContentTitle"}
-                >
-                    {title}
-                </h3>
-            </div>
-            <div className="hideContent"> 
-            {content}
-            </div>
+        <div className="main-introduction">
+            {props.data}
+        </div>
         </>
     );
 };
 
-export default Special;
+export default Introduce;

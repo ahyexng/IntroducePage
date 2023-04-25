@@ -1,4 +1,5 @@
 import Info from "./Info";
+import "../Main.css";
 
 const InfoList = (props) => {
     const {name, info} = props.data;
@@ -7,7 +8,7 @@ const InfoList = (props) => {
             <div className="name">{name}</div>
             <div className="contacts">
                 {info.map((data, index) => (
-                    <info data = {data} key ={index}/>
+                    <Info data = {data} key ={index}/>
                 ))}
             </div>
         </>

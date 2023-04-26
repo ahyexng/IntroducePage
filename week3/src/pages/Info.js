@@ -1,9 +1,9 @@
 const Info = (props) => {
     return (
         <>
-        <div className="about">
+            <div>
             {props.data}
-        </div>
+            </div>
         </>
     );
 };

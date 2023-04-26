@@ -8,6 +8,7 @@ const Side = (props) => {
         <>
         <div class="menu-bar">
         <div class = "index">
+            <img className="profile" src ="./img/profile.png"/>
         <h3 class="click">{side}</h3>
         </div>
         </div>

@@ -3,11 +3,9 @@
 body {
   margin: 0;
 } 
-.img {
-  justify-content: center;
 
-}
-#profile {
+.profile {
+  justify-content: center;
   width: 150px;
   height: 150px;
   transform: scale(1); 
@@ -23,6 +21,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.line {
+  margin: 0 0 0 220px;
+  border-bottom:  2px solid pink;
+  border-top: 2px solid pink;
 }
 .index {
   text-align: center;
@@ -40,7 +43,6 @@ body {
   opacity: 1;
   text-shadow: 0.7px 0.7px 0.7px #000;
 }
-
 .name {
   margin : 0 0 100px 250px;
   color: rgb(234, 21, 92);
@@ -56,17 +58,23 @@ body {
   font-style: italic;
 }
 .main-introduction {
-  margin : 0 0 20px 250px;
+  margin : 0 0 20px 30px;
   font-size: 17px;
   font-family: 'Noto Sans KR', sans-serif;
   opacity: 0.8;
 }
+.sns {
+  margin: 10px 0 0 250px;
+}
+.sns p {
+  color: palevioletred;
+}
 .sns i {
   margin-right: 40px;
 }
-footer img {
+.sns img {
   width: 50px;
 }
-footer img:hover {
+.sns img:hover {
   transform: translate(0, -5px);
 }

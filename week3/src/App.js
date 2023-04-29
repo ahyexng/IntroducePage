@@ -10,7 +10,9 @@ function App() {
   useEffect(() => {
     localStorage.setItem('id',UserInfo.id);
     localStorage.setItem('password',UserInfo.password);
-  })
+    console.log("useEffect실행");
+  },[isLogin]);
+
   return (
   <>
     {isLogin ? <Main/> : <Login/>}

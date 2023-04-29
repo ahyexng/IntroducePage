@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Login.css";
 import {UserInfo} from "./UserInfo";
 
-const Login = () => {
+const Login = ({isLogin, setLogin}) => {
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
 
@@ -21,7 +21,17 @@ const Login = () => {
   const getLogin = (e) => {
     e.preventDefault();
     console.log("ㅇㅇㅇ");
-    
+    localStorage.getItem(UserInfo.id);
+    localStorage.getItem(UserInfo.password);
+    if (UserInfo.id === id) {
+      console.log("id 일치, password 불일치");
+      if (UserInfo.password === password) {
+        console.log("id, password 일치");
+        isLogin = true;
+      } 
+    } else {
+      console.log("id or password 불일치");
+    }
   }
 
   return (

@@ -15,8 +15,7 @@ function App() {
 
   return (
   <>
-    {isLogin ? <Main/> : <Login/>}
-    
+    {isLogin ? <Main/> : <Login setLogin = {setLogin}/>}
   </>
   );
 };

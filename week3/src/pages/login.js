@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Login.css";
 import {UserInfo} from "./UserInfo";
 
-const Login = ({isLogin, setLogin}) => {
+const Login = (props) => {
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
 
@@ -23,14 +23,13 @@ const Login = ({isLogin, setLogin}) => {
     console.log("ㅇㅇㅇ");
     localStorage.getItem(UserInfo.id);
     localStorage.getItem(UserInfo.password);
-    if (UserInfo.id === id) {
-      console.log("id 일치, password 불일치");
-      if (UserInfo.password === password) {
-        console.log("id, password 일치");
-        isLogin = true;
-      } 
-    } else {
-      console.log("id or password 불일치");
+    if (UserInfo.id === id && UserInfo.password !== password) 
+      alert("비밀번호가 틀렸습니다.");
+    else if (UserInfo.id === id && UserInfo.password === password) {
+        alert("id, password 일치, 로그인 성공!");
+        props.setLogin(true);   
+    } else  {
+      alert("등록된 id가 없습니다.");
     }
   }
 

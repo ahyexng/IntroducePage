@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from "react";
-import "../Main.css";
-import InfoList from "./InfoList";
-import IntroduceList from "./IntroduceList";
-import data from "./Data.json";
+import {useState } from "react";
+import InfoList from "./InfoList/InfoList";
+import IntroduceList from "./IntroduceList/IntroduceList";
+import data from "../Data.json";
 import Side from "./Side";
 import Sns from "./Sns";
 import Dog from "./Dog";
-
-const Main = () => {
+const Main = (props) => {
     const [click, setClick] = useState(false);
+    
 return (
     <>
     <Side data = {data} />

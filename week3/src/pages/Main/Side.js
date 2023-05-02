@@ -1,6 +1,3 @@
-import "../Main.css";
-
-
 
 const Side = (props) => {
     const {side} = props.data;

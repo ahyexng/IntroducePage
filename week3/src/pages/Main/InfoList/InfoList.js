@@ -1,5 +1,4 @@
 import Info from "./Info";
-import "../Main.css";
 
 const InfoList = (props) => {
     const {name, info} = props.data;

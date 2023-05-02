@@ -1,7 +1,8 @@
-import Main from "./pages/Main";
-import Login from "./pages/login";
-import {UserInfo} from "./pages/UserInfo";
-import "./pages/Login.css";
+import Main from "./pages/Main/Main";
+import Login from "./pages/Login/login";
+import {UserInfo} from "./pages/Login/UserInfo";
+import "./pages/Login/Login.css";
+import "./pages/Main/Main.css"
 import React, { useEffect, useState } from "react";
 
 function App() {

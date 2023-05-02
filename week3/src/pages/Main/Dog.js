@@ -1,9 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 const Dog = (click) => {
-
     const [fade,setFade] = useState('');
-
-
     useEffect(()=>{
        setFade('end') ;
     
@@ -15,7 +12,7 @@ const Dog = (click) => {
   
     return (
       <div className = "dog_"> 
-        <img src='./img/dog.png' className={'start '+ fade}></img>
+        <img src='./img/dog.png' className={'start '+ fade} alt="dogimg"></img>
       </div>
     );
   };

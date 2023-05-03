@@ -1,15 +1,15 @@
 import {useContext } from "react";
 import { ModeContext } from '../Main';
-
-const Introduce = (props) => {
+const Info = (props) => {
     const {isDark} = useContext(ModeContext)
+
     return (
         <>
-        <div className={isDark ? "darkintro" : "main-introdution"}>
+            <div className = {isDark ? "darkInfo" : ""} >
             {props.data}
-        </div>
+            </div>
         </>
     );
 };
 
-export default Introduce;
+export default Info;

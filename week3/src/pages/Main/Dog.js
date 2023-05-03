@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
+import {useContext } from "react";
+import { ModeContext } from '../Main/Main';
 const Dog = (click) => {
+    const {isDark} = useContext(ModeContext)
     const [fade,setFade] = useState('');
     useEffect(()=>{
        setFade('end') ;

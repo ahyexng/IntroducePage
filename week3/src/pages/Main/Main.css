@@ -23,9 +23,13 @@ body {
   justify-content: center;
 }
 .line {
-  margin: 0 0 0 220px;
   border-bottom:  2px solid pink;
   border-top: 2px solid pink;
+  margin-left: 200px;
+  padding-left: 30px;
+}
+.line p {
+  margin-top: 14px;
 }
 .index {
   text-align: center;
@@ -51,7 +55,8 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 .contacts {
-  margin : 0 0 100px 250px;
+  margin-left: 250px;
+  padding-bottom: 100px;
   font-size: 15px;
   opacity: 0.5;
   font-family: 'Roboto Mono', monospace;
@@ -59,15 +64,16 @@ body {
 }
 .main-introduction {
   margin : 0 0 20px 30px;
-  font-size: 17px;
   font-family: 'Noto Sans KR', sans-serif;
   opacity: 0.8;
 }
 .sns {
-  margin: 10px 0 0 250px;
+  margin: 20px 0 0 250px;
 }
 .sns p {
   color: palevioletred;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 .sns i {
   margin-right: 40px;
@@ -102,4 +108,95 @@ body {
   transform: scale(1);
   transition :all 0.5s;
   width: 500px
+}
+.button {
+  margin: 10px 0 0 250px;
+}
+.darkname {
+  background-color:  rgb(78, 78, 78);
+  margin-left:  200px;
+  padding-left: 50px;
+  padding-bottom: 100px;
+  color: rgb(137, 247, 162);
+  font-size: 65px;
+  font-weight: 900;
+  font-family: 'Oswald', sans-serif;
+}
+.darkcontacts {
+  background-color: rgb(78, 78, 78);
+  color: white;
+  margin-left:  200px;
+  padding-left: 50px;
+  padding-bottom: 100px;
+  font-size: 15px;
+  font-family: 'Roboto Mono', monospace;
+  font-style: italic;
+  font-weight: bold;
+} 
+.darkintro {
+  background-color: rgb(78, 78, 78);
+  font-size: 16px;
+  font-family: 'Noto Sans KR', sans-serif;
+  opacity: 0.8;
+  color: white;
+  font-weight: bold;
+}
+
+
+.darkline {
+  background-color:  rgb(78, 78, 78);
+  margin-left: 200px;
+  padding-left: 30px;
+  border-bottom:  2px solid rgb(137, 247, 162);
+  border-top: 2px solid rgb(137, 247, 162);
+}
+
+.darkmenubar {
+  position: fixed;
+  border: 0;
+  background-color: rgb(137, 247, 162);
+  display: block;
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.darksns {
+  background-color: rgb(78, 78, 78);
+  margin-left: 200px;
+  padding-left: 50px;
+  padding-top: 5px;
+}
+.darksns p {
+  margin: 0;
+  padding-top: 18px;
+  color: rgb(137, 247, 162);
+  font-weight: bold;
+}
+.darksns img {
+  width: 50px;
+  padding-top: 20px;
+}
+.darksns img:hover {
+  transform: translate(0, -5px);
+}
+.darkdog {
+  background-color: rgb(78, 78, 78);
+  justify-content: center;
+  padding-left: 50px;
+}
+.darkdog img {
+  height: 200px;
+  width: 180px;
+}
+
+.darkdogimg {
+  display: flex;
+  background-color: rgb(78, 78, 78);
+}
+
+.buttondark {
+  background-color: rgb(78, 78, 78);
+  height: 160px;
 }
